@@ -86,7 +86,7 @@
       <img src="assets/img/hero-img.jpg" alt="" data-aos="fade-in">
 
       <div class="container d-flex flex-column align-items-center justify-content-center text-center" data-aos="fade-up" data-aos-delay="100">
-        <h2>Je suis Megane Lezegning etudiante en 2éme année de BTS SIO option SISR et Actuellement en recherhe d'une alternance en Administration systèmes et Réseaux</h2>
+        <h2>Je suis Megane Lezegning étudiante en 2éme année de BTS SIO option SISR et Actuellement en recherhe d'une alternance en Administration systèmes et Réseaux</h2>
         <p><span class="etudiante en 2 années de BTS SIO " data-typed-items="option SISR , Solutions, infrastructure, Systèmes, et Réseaux"></span></p>
       </div>
 
@@ -130,6 +130,13 @@
                 </div>
               </div><!-- End Skills Item -->
 
+               <div class="progress">
+                <span class="skill"><span>Audit de l'annuaire AD </span> <i class="val">90%</i></span>
+                <div class="progress-bar-wrap">
+                  <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+              </div><!-- End Skills Item -->
+
               <div class="progress">
                 <span class="skill"><span>Gestion des services réseaux(DHCP,DNS,proFTPD)</span> <i class="val">50%</i></span>
                 <div class="progress-bar-wrap">
@@ -163,7 +170,7 @@ J’aime particulièrement configurer et maintenir des environnements informatiq
               </p>
               <p>
                 J’ai eu l’occasion de travailler sur plusieurs projets, comme la mise en place d’un serveur DHCP, ADDS, la sécurisation d’un réseau local, et la création d’une infrastructure virtuelle complète sous Debian et Windows Server.
-Ces projets m’ont permis de développer mon autonomie et ma rigueur technique.
+, la mise en place de l'audit de l'annuaire AD de Valdepharm pendant mon stage,Ces projets m’ont permis de développer mon autonomie et ma rigueur technique.
               </p>
             </div>
           </div>
@@ -222,6 +229,18 @@ Ces projets m’ont permis de développer mon autonomie et ma rigueur technique.
           <div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
             <h3 class="resume-title">Experience Professionnelle</h3>
             <div class="resume-item">
+              <h4>Stagière en Administration systèmes et Réseaux</h4>
+              <h5>12 janvier - 13 fevrier 2026 </h5>
+              <p><em>Fareva Valdepharm </em></p>
+              <ul>
+                <li>Auditer l'annuaire AD de l'un des serveurs</li>
+                <li>Etablier un plan de remediation </li>
+                <li>Installation de LAPS sur ce serveur</li>
+              </ul>
+            </div><!-- Edn Resume Item -->
+
+            
+            <div class="resume-item">
               <h4>Stagière en Administratrice système et réseaux</h4>
               <h5>2025 </h5>
               <p><em>Mairie de sotteville-lès-Rouen </em></p>
@@ -260,9 +279,8 @@ Ces projets m’ont permis de développer mon autonomie et ma rigueur technique.
       <!-- Section Title -->
       <div class="container section-title" data-aos="fade-up">
         <h2>Veille Informatique</h2>
-        <p>Gestion centralisée des identités avec Active Directory et Azure AD (Microsoft Entra ID)</p>
-        <p>La gestion des identités est devenue un enjeu majeur de la sécurité informatique.
-          Active Directory (AD) permet la gestion locale, tandis qu’Azure AD (désormais Microsoft Entra ID) apporte cette gestion dans le cloud pour les environnements hybrides</p>
+        <p>L'Architecture Zero Trust (ZTA)</p>
+        <p>La protection des réseaux et des données dans un environnement sans périmètre fixe </p>
       </div><!-- End Section Title -->
 
       <div class="container">
@@ -275,12 +293,12 @@ Ces projets m’ont permis de développer mon autonomie et ma rigueur technique.
                 <i class="bi bi-activity"></i>
               </div>
               <a href="#" class="stretched-link">
-                <h3>Active Directory</h3>
+                <h3>Méthodologie</h3>
               </a>
               <ul>
-                <li>Système de gestion des identités local (on-premise), intégré à Windows Server.</li>
-                <li>Permet la gestion des utilisateurs, groupes, droits et politiques de sécurité.
-                  <li>Utilise Kerberos et LDAP pour l’authentification.</li>
+                <li>Collecte (Push): Flux RSS via Feedly (Suivi de IT-Connect,L'informatique News), Alerte Google (Alerte sur le mot-clé "Zero Trust").</li>
+                <li>Collecte (Pull): Consultation du portail Microsoft Learn (Entra ID)
+                  <li>Veille sur LinkedIn.</li>
                 </li>
               </ul>
             </div>
@@ -292,13 +310,12 @@ Ces projets m’ont permis de développer mon autonomie et ma rigueur technique.
                 <i class="bi bi-broadcast"></i>
               </div>
               <a href="#" class="stretched-link">
-                <h3>Azure Active Directory (Entra ID)</h3>
+                <h3>Analyse de ma veille</h3>
               </a>
               <ul>
-                <li>Version cloud d’AD, intégrée à Microsoft 365 et Azure.</li>
-                <li>Permet l’accès unifié aux ressources locales et cloud.</li>
-                <li>Fonctionne avec SSO (Single Sign-On) et MFA (Multi-Factor Authentication).</li>
-                <li>Facilite la mobilité et le télétravail.</li>
+                <li>Le concept: Ne jamais faire confiance, toujours vérifier.</li>
+                <li>Evolution: Abandon du modèle "Chateau Fort" (perimètre) pour le modèle "Aéroport" (Contrôle continu).</li>
+                <li>Technologie phare : le ZTNA remplace le VPN pour limiter les mouvements latéraux des attaquants.</li
               </ul>
             </div>
           </div><!-- End Veille Informatique Item -->
@@ -309,75 +326,14 @@ Ces projets m’ont permis de développer mon autonomie et ma rigueur technique.
                 <i class="bi bi-easel"></i>
               </div>
               <a href="#" class="stretched-link">
-                <h3>AD Connect / Hybridation</h3>
+                <h3>Outil</h3>
               </a>
               <ul>
-                <li>Azure AD Connect permet de synchroniser l’AD local avec le cloud.</li>
-                <li>L’utilisateur peut se connecter avec le même identifiant sur tous les services (local + cloud).</li>
-                <li>Exemple : un employé se connecte à son PC (AD local) et à Microsoft 365 (Azure AD) avec le même compte.</li>
+                <li>•	Microsoft Entra ID pour l’accès conditionnel.</li>
+                <li>•	•	Article (ANSSI): l’identité est devenue la nouvelle frontiere réseau : https://messervices.cyber.gouv.fr/guides/zero-trust.</li>
+                <li>•	Lien :https://www.it-connect.fr/zero-trust-network-access-ztna-pour-les-debutants/.</li>
               </ul>
             </div>
-          </div><!-- End Veille Informatique Item -->
-
-          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="400">
-            <div class="service-item position-relative">
-              <div class="icon">
-                <i class="bi bi-bounding-box-circles"></i>
-              </div>
-              <a href="#" class="stretched-link">
-                <h3>Sécurité & Modernisation</h3>
-              </a>
-              <ul>
-                <li>Passage vers le modèle Zero Trust :
-                  “Ne jamais faire confiance, toujours vérifier”</li>
-                <li>Mise en place d’authentification multifacteur (MFA).</li>  
-                <li>Gestion des accès conditionnels (ex : refuser un accès si connexion depuis un pays inconnu)</li>
-                <li>Surveillance en temps réel des connexions suspectes (Microsoft Entra ID Protection)</li>
-              </ul>
-              <a href="#" class="stretched-link"></a>
-            </div>
-          </div><!-- End Veille Informatique Item -->
-
-          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="500">
-            <div class="service-item position-relative">
-              <div class="icon">
-                <i class="bi bi-calendar4-week"></i>
-              </div>
-              <a href="#" class="stretched-link">
-                <h3>Evolution récentes</h3>
-              </a>
-              <ul>
-                <li>Azure AD devient Microsoft Entra ID (nouveau nom officiel depuis 2023).</li>
-                <li>Intégration plus forte avec les solutions de sécurité cloud et IA.</li>
-                <li>Développement du Passwordless (authentification sans mot de passe).</li>
-              </ul>
-              <a href="#" class="stretched-link"></a>
-            </div>
-          </div><!-- End Veille Informatique Item -->
-
-          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="600">
-            <div class="service-item position-relative">
-              <div class="icon">
-                <i class="bi bi-chat-square-text"></i>
-              </div>
-              <a href="#" class="stretched-link">
-                <h3>Avantage et limites</h3>
-              </a>
-              <ul>
-                <li>Sécurité renforcée</li>
-                <li>Simplification de l’administration</li>
-                <li>Adapté au télétravail et à la mobilité</li>
-                <li>Dépendance au cloud Microsoft</li>
-                <li>Complexité de mise en place pour les PME</li>
-                <li>Coûts de licence</li>
-              </ul>
-              <a href="#" class="stretched-link"></a>
-            </div>
-          </div><!-- End Veille Informatique Item -->
-
-        </div>
-
-      </div>
 
     </section><!-- /Veille Informatique Section -->
 
